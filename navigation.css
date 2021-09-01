@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+}
+.logo{
+    
+    width: 15%;
+    height: 80px;
+    /* background-color: yellow; */
+    display: inline-block;
+    vertical-align: top;
+    margin-left:40px;
+}
+.logo>h4{            /*Targeting a child*/
+    font-size: 30px;
+    font-family: 'segoe UI';
+    text-align: center;
+    line-height: 80px;
+}
+.nav{
+    margin-left: 8%;
+    width: 40%;
+    /* background-color: blue; */
+    height: 80px;
+    display: inline-block;
+}
+.nav > .list > li{
+    list-style: none;
+}
+.nav >.list > li a{
+    color: yellow;
+    text-decoration: none;
+
+}
+.list > li{    /* apply for each li in the class list */
+    display:inline-block;
+    line-height: 80px;
+    margin-right: 4px;
+    text-align: center;
+    width: 21%;
+    font-family: 'Segoe UI';
+    vertical-align: top;
+    /* background-color: red; */
+}
+
+/* .list>li:hover{
+    background-color:blue;
+    transition: 1s;
+    cursor: pointer;
+} */
+
+.dropdown1>li{
+    list-style: none;
+    display:inline-block;
+    line-height: 80px;
+    margin-right: 4px;
+    text-align: center;
+    width: 21%;
+    font-family: 'Segoe UI';
+    color:yellow;
+    width: 100%;
+    height: 80px;
+    /* background-color: black; */
+    /* color: white; */
+    
+}
+.hack{
+    background-color: blue;
+}
+.dropdown1{
+    /* display: none; */
+    height: 0;
+    /* if the height of parent 0 then if the child moves away from content the it will be hidded */
+    overflow: hidden; /* to hide extra height contents*/
+    transition: 0.5s;
+    background-color: gray;
+}
+
+/* to hover on parent hack the child dropdown1 need to display  */
+
+.hack:hover > .dropdown1{ /*while touching it creates 240px height before 0px */
+    /* display: block; */
+    /* transition: 2s; */
+    height: 240px;
+    
+}
+.dropdown1>li:hover{
+    background-color:turquoise;
+    
+}
